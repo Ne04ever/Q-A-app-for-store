@@ -1,4 +1,3 @@
-from cohere_key import key
 from langchain.utilities import SQLDatabase
 import os
 from dotenv import load_dotenv
