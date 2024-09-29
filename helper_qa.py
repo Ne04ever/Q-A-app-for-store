@@ -15,7 +15,7 @@ from langchain.chains.sql_database.prompt import PROMPT_SUFFIX
 
 
 load_dotenv()
-os.environ['COHERE_API_KEY']   == st.secrets["key"]
+os.environ['COHERE_API_KEY'] = st.secrets["key"]
 
 
 
