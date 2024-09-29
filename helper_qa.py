@@ -1,4 +1,5 @@
 from langchain.utilities import SQLDatabase
+import streamlit as st
 import os
 from dotenv import load_dotenv
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -15,7 +16,7 @@ from langchain.chains.sql_database.prompt import PROMPT_SUFFIX
 
 
 load_dotenv()
-os.environ['COHERE_API_KEY'] = st.secrets["key"]
+os.environ['COHERE_API_KEY'] = st.secrets["COHERE_API_KEY"]
 
 
 
